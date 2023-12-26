@@ -3,6 +3,7 @@ import http from "http";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import { sendMailToUser } from "./src/controllers/mail-controller";
+import cors from "cors";
 
 dotenv.config();
 
@@ -11,6 +12,7 @@ const port = process.env.APP_PORT || 1998;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 
 const server = http.createServer(app);
 
