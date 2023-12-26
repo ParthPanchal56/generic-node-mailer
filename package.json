@@ -1,17 +1,17 @@
 {
   "name": "generic-mailer",
   "version": "1.0.0",
-  "description": "Description of your project",
+  "description": "A generic mailer application built with Express.js and TypeScript.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.ts",
+    "dev": "nodemon --exec ts-node server.ts",
     "build": "tsc",
     "vercel-build": "echo hello"
   },
   "keywords": [],
   "author": "Your Name or Organization",
-  "license": "ISC",
+  "license": "MIT", // Update to your preferred license
   "engines": {
     "node": ">=14.0.0"
   },
