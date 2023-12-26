@@ -1,0 +1,14 @@
+api is deployed on https://generic-node-mailer.onrender.com/
+
+mail endpoint is https://generic-node-mailer.onrender.com/send-mail
+
+{
+  "to": "hekoy97403@wikfee.com",
+  "subject": "One Time Password for verification",
+  "templateName": "signup-otp",
+  "data": {
+    "appName": "Nimbuslink",
+    "mailType":"Here is the OTP that you requested",
+    "mailMessage":"25469239"
+  }
+}
